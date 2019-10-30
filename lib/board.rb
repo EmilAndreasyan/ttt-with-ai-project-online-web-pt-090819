@@ -10,4 +10,8 @@ class Board
   def self.reset!
     @@cells.clear
   end
+  
+  def self.display
+    
+  end
 end
