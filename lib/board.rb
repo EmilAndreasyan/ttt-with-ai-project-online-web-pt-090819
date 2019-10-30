@@ -4,7 +4,7 @@ class Board
   @@cells = []
   
   def initialize
-    @board = Array(9, " ")
+    @board = Array.new(9, " ")
   end
   
   def self.reset!
