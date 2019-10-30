@@ -20,6 +20,10 @@ class Board
   end
   
   def position(input)
-    input.between?(0, 8)
+    input.gets.chomp.to_i.between?(0, 8)
+  end
+  
+  def update(position, token = "X")
+    position(input)
   end
 end
