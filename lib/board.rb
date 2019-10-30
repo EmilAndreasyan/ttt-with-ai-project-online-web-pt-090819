@@ -19,8 +19,12 @@ class Board
     puts "#{@board[6]} | #{@board[7]} | #{@board[8]}"
   end
   
+  def position_taken?(index)
+    index == " "
+  end
+  
   def position(input)
-    input.gets.chomp.to_i.between?(0, 8)
+    index.between?(0,8) && !position_taken?(index)
   end
   
   def update(position, token = "X")
