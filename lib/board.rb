@@ -20,7 +20,7 @@ class Board
   end
   
   def position_taken?(index)
-    index == " "
+    @board[index] != " "
   end
   
   def position(input)
